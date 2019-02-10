@@ -1,5 +1,5 @@
-Main()
+function Main {}
 
 
 
-Ninety_Nine_Bottles_of_Beer()
+Function Ninety_Nine_Bottles_of_Beer{}
