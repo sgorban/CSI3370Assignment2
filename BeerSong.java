@@ -1,5 +1,5 @@
 public class Main {
-    Ninety_Nine_bottles_of_Beer
+     private class Ninety_Nine_bottles_of_Beer beer = new Ninety_Nine_Bottles_of_Beer
         }
 
 
