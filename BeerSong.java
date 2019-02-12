@@ -1,5 +1,5 @@
 
-
+// Calling Ninety_Nine_Bottles_of_Beer
 public class Main {
      private class Ninety_Nine_bottles_of_Beer beer = new Ninety_Nine_Bottles_of_Beer
         }
@@ -8,6 +8,7 @@ public class Main {
 
 public class Ninety_Nine_Bottles_of_Beer{
     public static void main (String[] args){
+        // Starting at 99
         int beerNum = 99;
         String word = "bottles";
         while(beerNum > 0){
@@ -16,6 +17,7 @@ public class Ninety_Nine_Bottles_of_Beer{
             System.out.println("Take one down.");
             System.out.println("Pass it around.");
 
+            //Takes away 1 everytime it does the loop
             beerNum = beerNum - 1;
             if (beerNum == 1){
                 word = "bottle";
