@@ -5,20 +5,25 @@ public class Main {
 
 
 public class Ninety_Nine_Bottles_of_Beer{
+    public static void main (String[] args){
+        int beerNum = 99;
+        String word = "bottles";
+        while(beerNum > 0){
+            System.out.println(beerNum + " " + word + " of beer on the wall");
+            System.out.println(beerNum + " " + word + " of beer.");
+            System.out.println("Take one down.");
+            System.out.println("Pass it around.");
 
-    static String bottles(int n) {
-        return MessageFormat.format("{0,choice,0#No more bottles|1#One bottle|2#{0} bottles} of beer", n);
-    }
-
-    public static void main(String[] args) {
-        String bottles = bottles(99);
-        for (int n = 99; n > 0; ) {
-            System.out.println(bottles + " on the wall");
-            System.out.println(bottles);
-            System.out.println("Take one down, pass it around");
-            bottles = bottles(--n);
-            System.out.println(bottles + " on the wall");
-            System.out.println();
+            beerNum = beerNum - 1;
+            if (beerNum == 1){
+                word = "bottle";
+            }
+            if (beerNum > 0){
+                System.out.println(beerNum + " " + word + " of beer on the wall");
+                System.out.println("***************************");
+            }else {
+                System.out.println("No more bottles of beer on the wall");
+            }
         }
     }
 }
